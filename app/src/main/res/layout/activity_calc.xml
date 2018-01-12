@@ -223,7 +223,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:background="a"
+        android:background="@android:color/transparent"
         android:paddingRight="57dp"
         android:paddingTop="125dp"
         android:src="@drawable/equal" />
