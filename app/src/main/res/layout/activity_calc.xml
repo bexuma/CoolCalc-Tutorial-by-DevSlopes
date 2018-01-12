@@ -19,7 +19,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/resultsTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
@@ -28,6 +28,7 @@
                 android:paddingRight="10dp"
                 android:paddingTop="50dp"
                 android:text="567"
+                android:textColor="#ffffff"
                 android:textSize="40sp" />
 
         </LinearLayout>
@@ -42,7 +43,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="a"
+                android:background="@android:color/transparent"
                 android:text="7"
                 android:textColor="#000000"
                 android:textSize="30sp" />
@@ -52,7 +53,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="a"
+                android:background="@android:color/transparent"
                 android:text="8"
                 android:textColor="#000000"
                 android:textSize="30sp" />
@@ -64,7 +65,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="a"
+                android:background="@android:color/transparent"
                 android:text="9"
                 android:textColor="#000000"
                 android:textSize="30sp" />
@@ -74,7 +75,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="a"
+                android:background="@android:color/transparent"
                 android:src="@drawable/divide" />
 
         </LinearLayout>
@@ -89,7 +90,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="a"
+                android:background="@android:color/transparent"
                 android:text="4"
                 android:textColor="#000000"
                 android:textSize="30sp" />
@@ -99,7 +100,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="a"
+                android:background="@android:color/transparent"
                 android:text="5"
                 android:textColor="#000000"
                 android:textSize="30sp" />
@@ -111,7 +112,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="a"
+                android:background="@android:color/transparent"
                 android:text="6"
                 android:textColor="#000000"
                 android:textSize="30sp" />
@@ -121,7 +122,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="a"
+                android:background="@android:color/transparent"
                 android:src="@drawable/multiply" />
         </LinearLayout>
 
@@ -135,7 +136,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="a"
+                android:background="@android:color/transparent"
                 android:text="1"
                 android:textColor="#000000"
                 android:textSize="30sp" />
@@ -145,7 +146,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="a"
+                android:background="@android:color/transparent"
                 android:text="2"
                 android:textColor="#000000"
                 android:textSize="30sp" />
@@ -157,17 +158,17 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="a"
+                android:background="@android:color/transparent"
                 android:text="3"
                 android:textColor="#000000"
                 android:textSize="30sp" />
 
             <ImageButton
-                android:id="@+id/substractBtn"
+                android:id="@+id/subtractBtn"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="a"
+                android:background="@android:color/transparent"
                 android:src="@drawable/subtract" />
         </LinearLayout>
 
@@ -177,26 +178,29 @@
             android:layout_weight="1"
             android:orientation="horizontal">
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="2"
+                android:gravity="center"
                 android:orientation="vertical">
 
                 <Button
                     android:id="@+id/clearBtn"
-                    android:layout_width="match_parent"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
+                    android:background="#38c5c6"
                     android:text="Clear"
+                    android:textColor="#ffffff"
                     android:textSize="18sp" />
-            </LinearLayout>
+            </RelativeLayout>
 
             <Button
                 android:id="@+id/zeroBtn"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="a"
+                android:background="@android:color/transparent"
                 android:text="0"
                 android:textColor="#000000"
                 android:textSize="30sp" />
@@ -206,11 +210,22 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="a"
+                android:background="@android:color/transparent"
                 android:src="@drawable/add" />
 
         </LinearLayout>
 
     </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/calcBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="a"
+        android:paddingRight="57dp"
+        android:paddingTop="125dp"
+        android:src="@drawable/equal" />
 
 </RelativeLayout>
